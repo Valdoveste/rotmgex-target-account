@@ -1,6 +1,6 @@
 #align-center, #inputs-container, 
 #win-pathinfo-container, #string-base64, 
-#target-container{
+#target-container, #pass-container, label{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +63,18 @@
 
 #main-container > #target-container > #copy-to-clipboard:hover .svg{ fill: white; }
 
+#pass-container{
+    width: 100%;
+    position: relative;
+}
+
+#btn-show-pass, .eye:nth-child(1){ display: none; }
+
+#btn-show-pass + label{
+    right: 10px;
+    position: absolute;
+}
+
 /* width */
 ::-webkit-scrollbar { height: 5px; }
   
@@ -74,3 +86,4 @@
   
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover { background: #555; }
+

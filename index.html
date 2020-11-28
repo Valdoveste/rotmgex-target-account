@@ -15,12 +15,28 @@
         <div id="align-center">
             <div id="main-container">
                 <div id="inputs-container">
+                    <div id="win-pathinfo-container">
+                        <input type="email" name="rotmgex-email" placeholder="Local Disk">
+                        <input type="email" name="rotmgex-email" placeholder="User">
+                    </div>
                     <input type="email" name="rotmgex-email" placeholder="Email">
                     <input type="password" name="rotmgex-pass" placeholder="Password">
                 </div>
                 <button>Create target</button>
+                <div id="target-container">
+                    <p id="string-base64">
+                        "C:\Users\Usuario\Documents\RealmOfTheMadGod\Production\RotMG Exalt.exe" "data:{{platformeca,password:RGFya2VuZXMyNA==,guid:bXVsYXJvdG1nQCsxZ21haWwuY29t,env:4}}"
+                    </p>
+                            <button id="copy-to-clipboard">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                                    <path d="M0 0h24v24H0z" fill="none"/>
+                                    <path class="svg" d="M19 2h-4.18C14.4.84 13.3 0 12 0c-1.3 0-2.4.84-2.82 2H5c-1.1
+                                        0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1
+                                        .45-1 1-1zm7 18H5V4h2v3h10V4h2v16z"/>
+                                    </svg>
+                            </button>
+                </div>
             </div>
-            <p id="target-base64"></p>
         </div>
 
         <script src="./src/js/" async defer></script>

@@ -1,16 +1,76 @@
-#align-center, #main-input-container{
+#align-center, #inputs-container, 
+#win-pathinfo-container, #string-base64, 
+#target-container{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #align-center{
-    flex-direction: column;
-    align-content: space-around;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
+    flex-direction: column;
 }
 
-#main-input-container{
+#align-center > #main-container{
+    width: 50%;
+    padding: 5px;
     box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.712);
 }
+
+#main-container > #inputs-container > #win-pathinfo-container{ width: 100%; }
+
+#main-container > #inputs-container > #win-pathinfo-container input:nth-child(1){ margin: 0 5px 0 0; }
+
+#main-container > #inputs-container{
+    width: 100%;
+    flex-direction: column;
+}
+
+#main-container > #target-container{
+    width: 100%;
+    height: 50px;
+    margin: 5px 0 0 0;
+    position: relative; 
+    padding:  0 3.5rem 0 0;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(206, 205, 205);
+}
+
+#main-container > #target-container > #string-base64{
+    width: 100%;
+    height: 100%;
+    padding: 20px; 
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap; 
+    justify-content: start;
+    text-overflow: ellipsis;
+}
+
+#main-container > #target-container > #copy-to-clipboard{
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border: unset;
+    position: absolute;
+    border-radius: 0 4px 4px 0;
+    /* background-color: #4527a0;*/
+    border-left: 1px solid rgb(206, 205, 205);
+}  
+
+#main-container > #target-container > #copy-to-clipboard .svg{ transition: fill 0.5s ease-in; }
+
+#main-container > #target-container > #copy-to-clipboard:hover .svg{ fill: white; }
+
+/* width */
+::-webkit-scrollbar { height: 5px; }
+  
+/* Track */
+::-webkit-scrollbar-track { background: #f1f1f1; }
+  
+/* Handle */
+::-webkit-scrollbar-thumb { background: #888; }
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover { background: #555; }

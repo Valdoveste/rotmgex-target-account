@@ -41,11 +41,13 @@
     width: 100%;
     height: 100%;
     padding: 20px; 
+    border: unset;
     overflow: hidden;
     overflow-x: scroll;
     white-space: nowrap; 
     justify-content: start;
     text-overflow: ellipsis;
+    background-color: unset;
 }
 
 #main-container > #target-container > #copy-to-clipboard{

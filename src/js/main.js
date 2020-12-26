@@ -2,7 +2,7 @@ const checkbox = document.getElementById("btn-show-pass");
 const btnTarget = document.getElementById("btn-target");
 
 checkbox.addEventListener("change", (event) =>{
-    let passwordInput = document.getElementsByTagName("input")[4]; 
+    let passwordInput = document.getElementsByTagName("input")[3]; 
     let svgEye = document.getElementsByTagName("svg");
 
     switch(checkbox.checked){
@@ -36,7 +36,7 @@ btnTarget.addEventListener("click", event =>{
 
     const filePath = String.raw `C:\Users\Usuario\Documents\RealmOfTheMadGod\Production\RotMG Exalt.exe`;
 
-    var repLocal = filePath.replace("C", reqInputs[0].value);
+    var repLocal = filePath.replace("C:", reqInputs[0].value);
     var repUser = repLocal.replace("Usuario", reqInputs[1].value);
     
     console.log(repUser);

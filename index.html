@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Account Target</title>
+    <title>Target creator</title>
+    <!-- <link rel="icon" href="./assets/home_img/logo_roxo_final.png"> -->
     <!-- <meta http-equiv="refresh" content="2"> -->
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,8 +19,19 @@
         <div id="main-container">
             <div id="inputs-container">
                 <div id="win-pathinfo-container">
-                    <input class="required-inputs" type="text" name="rotmgex-localD" placeholder="Local Disk" maxlength="20">
-                    <input class="required-inputs" type="text" name="rotmgex-user" placeholder="User" maxlength="20">
+                    <select id="local-disk-name" class="required-inputs" title="Which disk is the game is?">
+                        <div id="select" >
+                            <option selected>C:</option>
+                            <option>D:</option>
+                            <option>E:</option>
+                            <option>F:</option>
+                            <option>G:</option>
+                            <option>J:</option>
+                            <option>H:</option>
+                            <option>I:</option>
+                        </div>
+                    </select>
+                    <input class="required-inputs" type="text" name="rotmgex-user" placeholder="Computer user" maxlength="20" title="Open File Explorer and navigate to Users">
                 </div>
                 <input class="required-inputs" type="email" name="rotmgex-email" placeholder="Email" maxlength="45">
 
@@ -57,8 +69,14 @@
                 </button>
             </div>
         </div>
+        <!-- <div id="tutorial">
+            <button>Close tutorial</button>
+            <video width="600" controls>
+                <source src="./assets/tutorial.mp4" type="video/mp4">
+            </video>
+        </div> -->
     </div>
-
+    <footer>Made by Valdoveste</footer>
     <script src="./src/js/main.js" async defer></script>
 </body>
 </html>

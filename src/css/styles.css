@@ -18,6 +18,10 @@
     box-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.712);
 }
 
+html{ background-color: rgba(255, 255, 255, 0.862) }
+
+#main-container{ background-color: rgb(240, 240, 240); }
+
 #main-container > #inputs-container > #win-pathinfo-container{ width: 100%; }
 
 #main-container > #inputs-container > #win-pathinfo-container input:nth-child(1){ margin: 0 5px 0 0; }
